@@ -1,0 +1,144 @@
+.footer {
+    width: 100%;
+    background: var(--bordo-degrade);
+    color: var(--branco-puro);
+    padding: 2em;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+
+
+
+
+.footer__links {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.footer__links a {
+    color: var(--amarelo-dourado);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer__links a:hover {
+    color: var(--branco-puro);
+}
+
+.footer__copyright {
+    font-size: 0.95em;
+    opacity: 0.8;
+}
+
+.footer__mapa__titulo,
+.footer__links__titulo {
+    color: var(--branco-puro);
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-family: var(--fonte-terciaria);
+}
+
+.mapa {
+    width: 80vw;
+    max-width: 750px;
+    height: 25vh;
+    max-height: 250px;
+    margin: 0.5em;
+    border-radius: 8px;
+}
+
+.mapa__paragrafo {
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.footer__links-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links-item img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+}
+
+.footer__copyright {
+    margin-top: 3em;
+    color: var(--branco-puro);
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+
+@media (min-width:481px) and (max-width: 1024px) {
+    .footer {
+        padding: 1em;
+        font-size: 0.95em;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .mapa {
+        width: 60vw;
+        height: 30vh;
+    }
+
+    .footer__mapa__titulo,
+    .footer__links__titulo {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 0.5em;
+        font-size: 0.9em;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .mapa {
+        width: 80vw;
+        max-width: 400px;
+        height: 20vh;
+    }
+
+    .footer__mapa__titulo,
+    .footer__links__titulo {
+        font-size: 1.3em;
+    }
+
+    .footer__links-item img {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.3em;
+    }
+
+    .footer__copyright {
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+}
