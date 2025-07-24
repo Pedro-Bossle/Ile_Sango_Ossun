@@ -1,0 +1,206 @@
+header {
+    background: var(--branco-visivel);
+    border-bottom: 2px solid var(--bordo);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+
+
+.nav-item {
+    text-decoration: none;
+    color: var(--bordo);
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color: var(--amarelo-dourado);
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.nav-logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.mobile__show {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .mobile__hide {
+        display: none;
+    }
+
+    .mobile__show {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .menu__burguer {
+        width: 50px;
+        height: 50px;
+        background-image: url(../assets/logos/Icon\ -\ Burguer\ Menu\ -\ White.png);
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+    .container__botao:checked~.container__rotulo>.menu__burguer {
+        background-image: url(../assets/logos/Icon\ -\ Burguer\ Menu\ -\ Black.png);
+    }
+
+    .menu__lista {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 50vw;
+        background: var(--branco-visivel);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        z-index: 100;
+        padding: 1em 0 1em 0;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border: 1px solid var(--bordo);
+    }
+
+
+    .menu__lista__item {
+        text-decoration: none;
+        color: var(--bordo);
+        font-family: var(--fonte-principal);
+        font-size: 18px;
+        padding: 1em;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    .container__botao:checked~.menu__lista {
+        display: block;
+    }
+
+
+    .nav-item.login {
+        padding: 0.5em;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        display: flex;
+    }
+
+    .nav-item img {
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        background-color: var(--bordo);
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .mobile__hide {
+        display: none;
+    }
+
+    .mobile__show {
+        display: block;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .menu__burguer {
+        width: 50px;
+        height: 50px;
+        background-image: url(../assets/logos/Icon\ -\ Burguer\ Menu\ -\ White.png);
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container__botao {
+        display: none;
+    }
+
+    .container__botao:checked~.container__rotulo>.menu__burguer {
+        background-image: url(../assets/logos/Icon\ -\ Burguer\ Menu\ -\ Black.png);
+    }
+
+    .menu__lista {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 20vw;
+        background: var(--branco-visivel);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        z-index: 100;
+        padding: 1em 0 1em 0;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border: 1px solid var(--bordo);
+    }
+
+
+    .menu__lista__item {
+        text-decoration: none;
+        color: var(--bordo);
+        font-family: var(--fonte-principal);
+        font-size: 20px;
+        padding: 1em;
+        text-decoration: underline 1px;
+        text-underline-offset: 6px;
+    }
+
+    .container__botao:checked~.menu__lista {
+        display: block;
+    }
+
+
+    .nav-item.login {
+        padding: 0.5em;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        display: flex;
+    }
+
+    .nav-item img {
+        padding: 0;
+        margin: 0;
+        border-radius: 50%;
+        background-color: var(--bordo);
+
+    }
+}
