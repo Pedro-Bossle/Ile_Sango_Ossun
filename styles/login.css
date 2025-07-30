@@ -1,0 +1,51 @@
+ #login__page {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+     width: 100vw;
+     background-image: url(../assets/backgrounds/Xango\ e\ Oxum\ login.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .login__container__main {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .login__container__inputs {
+     display: flex;
+     flex-direction: column;
+     border: 1px solid var(--bordo);
+     border-top-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+     padding: 3em;
+     background-color: var(--branco-puro);
+ }
+
+ .login__input__content {
+     margin-bottom: 1em;
+ }
+
+ .login__campo__titulo {
+     margin-bottom: 0.2em;
+     font-size: 1rem;
+ }
+
+ .login__input__campo {
+     height: 2vh;
+     font-size: 16px;
+     width: 30vh;
+ }
+
+ .error{
+    display: none;
+    font-size: 18px;
+    color: red;
+    margin-bottom: 1em;
+ }

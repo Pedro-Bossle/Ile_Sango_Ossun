@@ -1,0 +1,18 @@
+.ritos__titulo {
+    margin-top: 1em;
+}
+
+.ritos__container {
+    margin: 2em 6em;
+    display: flex;
+}
+
+.ritos__foto {
+    height: 50vh;
+    width: 20vw;
+    margin-left: 3em;
+}
+
+.ritos__botao{
+    margin-bottom: 3em;
+}

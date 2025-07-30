@@ -1,0 +1,62 @@
+.banner {
+    position: relative;
+    background-image: url(../assets/backgrounds/Xango\ e\ Oxum\ 3.png);
+    padding: 8em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10%;
+    overflow: hidden;
+    padding: 9em;
+    border-bottom: 2px solid var(--bordo);
+}
+
+.banner h1,
+.banner h2 {
+    color: var(--branco-puro);
+    text-shadow: 3px 3px 8px #460505;
+}
+
+.banner__info__subtitulo {
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        padding: 2em 0.5em;
+        height: auto;
+        background-position: center;
+    }
+
+    .banner h1,
+    .banner h2 {
+        font-size: 1.2em;
+    }
+
+    .banner__info__subtitulo {
+        font-size: 0.9em;
+        margin: 5px;
+    }
+}
+
+@media (min-width:481px) and (max-width: 1024px) {
+    .banner {
+        padding: 4em 1em;
+        height: auto;
+        background-position: center;
+    }
+
+    .banner h1,
+    .banner h2 {
+        font-size: 2em;
+    }
+
+    .banner__info__subtitulo {
+        font-size: 1em;
+        margin: 10px;
+    }
+}
