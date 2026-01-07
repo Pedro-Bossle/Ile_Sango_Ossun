@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilê Asé | Sàngó Aganjù e Oṣun Pandá</title>
+    <title>Ilê Asé | Editar Eventos</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -15,9 +15,11 @@
 
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/admEventos.css">
 </head>
 
 <body>
+    <script src="../js/restrictedAreaValidation.js"></script>
     <script src="../js/menuAdm.js"></script>
 
     <header>
@@ -51,58 +53,148 @@
             <a href="kimbanda.html" class="nav-item mobile__hide">Kimbanda</a>
             <a href="umbanda.html" class="nav-item mobile__hide">Umbanda</a>
 
-            <a href="loginPage.html" class="nav-item login">
+            <a href="loginPage.html" id="botaoLogin" class="nav-item login">
                 <p class="mobile__hide">Login</p>
                 <img src="../assets/logos/Icon - Login.png" class="mobile__show">
             </a>
         </nav>
     </header>
-    <!-- <h2 class="titulo ritos__titulo">A Kimbanda Malei</h2>
-    <div class="ritos__container">
-        <p class="paragrafo rito__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto,
-            neque unde saepe
-            nisi dolor alias itaque doloribus rerum. Omnis consectetur inventore error maiores assumenda officia nisi
-            optio dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptate, blanditiis
-            placeat nihil dolore doloribus tempore, libero mollitia natus deleniti earum, et officia veritatis cumque!
-            Molestiae dignissimos ipsa voluptatem possimus!</p>
-        <img class="ritos__foto" src="../assets/images/Tambor.png" alt="">
 
-    </div>
-    <div class="container__botoes ritos__botao">
-        <a href="../index.html#eventos" class="botao">Próximas Sessões</a>
-    </div> -->
+    <body>
+        <main>
+            <h2 class="titulo adm__eventos__main__title">Editar Eventos disponíveis</h2>
+            <!-- <div class="adm__eventos__filter__container">
+                <input type="text" class="filter adm__eventos__filter" placeholder="Filtro">
+                <button class="filter adm__eventos__filter">Filtrar A-Z</button>
+                <button class="filter adm__eventos__filter">Filtrar Data</button>
+                <button class="filter adm__eventos__filter">Filtrar Tipo</button>
+                <button class="filter adm__eventos__filter add__new">Adicionar Novo</button>
+            </div> -->
+            <div class="adm__eventos__container">
+                <div id="adm__edit__screen" class="adm__eventos__edit__screen">
+                    <h2 class="eventos__edit__screen__title">Editar %Evento Nome%</h2>
 
-</body>
-<!-- <footer class="footer">
-    <section id="footer">
-        <div class="footer__container">
+                    <div class="adm__eventos__edit__screen__2">
+                        <div>
+                            <div class="adm__eventos__edit__screen__box">
+                                <h3 class="evento__edit__title">Titulo do Evento</h3>
+                                <input type="text" placeholder="Nome"></button>
+                                <h3 class="evento__edit__title">Data</h3>
+                                <input type="date" placeholder="DD/MM/AAAA"></button>
+                                <h3 class="evento__edit__title">Horário</h3>
+                                <input type="time" placeholder="00:00"></button>
+                                <h3 class="evento__edit__title">Endereço</h3>
+                                <input type="text"
+                                    placeholder="Rua Visconde de Pelotas - Pio X, Caxias do Sul - RS, 95020-500"></button>
 
-            <div class="local__mapa">
-                <h2 class="footer__mapa__titulo">Venha nos Visitar</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.2694983812203!2d-51.18929891177411!3d-29.15672962719492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea3ee5a67d0b1%3A0x44705f5b60a93411!2zSWzDqiDDgHPDqSBTYW5nw7IgQWdhbmrDuiBlIE9zc3VuIFBhbmTDoQ!5e0!3m2!1spt-BR!2sbr!4v1753278374637!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                <p class="mapa__paragrafo">Rua Visconde de Pelotas - Pio X, Caxias do Sul - RS, 95020-500 <br>
+                                <div class="type-button-container">
+                                    <div class="toggle-wrapper">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-container">
+                                            <div class="toggle-button">
+                                                <div class="toggle-button-circles-container">
+                                                    <div class="toggle-button-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="botao__texto">Público</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="adm__eventos__edit__screen__box">
+                                <div class="type-button-container">
+                                    <div class="toggle-wrapper">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-container">
+                                            <div class="toggle-button">
+                                                <div class="toggle-button-circles-container">
+                                                    <div class="toggle-button-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="botao__texto">Kimbanda</p>
+                                </div>
+                                <div class="type-button-container">
+                                    <div class="toggle-wrapper">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-container">
+                                            <div class="toggle-button">
+                                                <div class="toggle-button-circles-container">
+                                                    <div class="toggle-button-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="botao__texto">Umbanda</p>
+                                </div>
+                                <div class="type-button-container">
+                                    <div class="toggle-wrapper">
+                                        <input class="toggle-checkbox" type="checkbox">
+                                        <div class="toggle-container">
+                                            <div class="toggle-button">
+                                                <div class="toggle-button-circles-container">
+                                                    <div class="toggle-button-circle"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="botao__texto">Nação</p>
+                                </div>
+                            </div>
+                            <img class="evento__edit__img" src="../assets/logos/Nação.png">
+                            <!-- <img class="evento__edit__img" src="../assets/logos/kimbanda.png">
+                            <img class="evento__edit__img" src="../assets/logos/Umbanda.png"> -->
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="eventos__edit__screen__buttons">
+                        <button class="button__delete">Deletar</button>
+                        <button class="button__back">Voltar</button>
+                        <button class="button__save">Salvar</button>
+                    </div>
+                </div>
 
             </div>
+        </main>
+    </body>
+    <footer class="footer">
+        <section id="footer">
+            <div class="footer__container">
 
-            <div class="footer__links">
-                <h2 class="footer__links__titulo">Fale Conosco</h2>
-                <a href="https://wa.me/555491556023?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
-                    class="footer__links-item" target="_blank"><img src="../assets/logos/Icon - Whatsapp.svg">(54)
-                    9.9155-6023</a>
-                <a href="#" class="footer__links-item"><img src="../assets/logos/Icon - Instagram.svg">@ilesangossun</a>
-                <a href="mailto:ile.de.ase@gmail.com?subject=Contato&body=Olá, gostaria de saber mais sobre a casa de religião."
-                    class="footer__links-item">
-                    <img src="../assets/logos/Icon - Mail.png" alt="Ícone de e-mail">
-                    ile.de.ase@gmail.com
-                </a>
+                <div class="local__mapa">
+                    <h2 class="footer__mapa__titulo">Venha nos Visitar</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.2694983812203!2d-51.18929891177411!3d-29.15672962719492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea3ee5a67d0b1%3A0x44705f5b60a93411!2zSWzDqiDDgHPDqSBTYW5nw7IgQWdhbmrDuiBlIE9zc3VuIFBhbmTDoQ!5e0!3m2!1spt-BR!2sbr!4v1753278374637!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                    <p class="mapa__paragrafo">Rua Visconde de Pelotas - Pio X, Caxias do Sul - RS, 95020-500 <br>
+
+                </div>
+
+                <div class="footer__links">
+                    <h2 class="footer__links__titulo">Fale Conosco</h2>
+                    <a href="https://wa.me/555491556023?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
+                        class="footer__links-item" target="_blank"><img src="../assets/logos/Icon - Whatsapp.svg">(54)
+                        9.9155-6023</a>
+                    <a href="#" class="footer__links-item"><img
+                            src="../assets/logos/Icon - Instagram.svg">@ilesangossun</a>
+                    <a href="mailto:ile.de.ase@gmail.com?subject=Contato&body=Olá, gostaria de saber mais sobre a casa de religião."
+                        class="footer__links-item">
+                        <img src="../assets/logos/Icon - Mail.png" alt="Ícone de e-mail">
+                        ile.de.ase@gmail.com
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <p class="footer__copyright"> © 2025 Ilê Asé Sàngó Aganjù e Osun Pandá. Todos os direitos reservados. </p>
-    </section>
-</footer> -->
+            <p class="footer__copyright"> © 2025 Ilê Asé Sàngó Aganjù e Osun Pandá. Todos os direitos reservados. </p>
+        </section>
+    </footer>
 
 </html>

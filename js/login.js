@@ -1,6 +1,6 @@
 const admins = [
-    { email: "tiagoeb123", pass: "ile08102022" },
-    { email: "user2", pass: "senha456" }
+    { email: "tiagoeb123", pass: "12345" },
+    { email: "rosangela123", pass: "12345" }
 ];
 
 document.getElementById("acessar__adm").addEventListener("click", function () {

@@ -43,9 +43,9 @@
      width: 30vh;
  }
 
- .error{
-    display: none;
-    font-size: 18px;
-    color: red;
-    margin-bottom: 1em;
+ .error {
+     display: none;
+     font-size: 18px;
+     color: red;
+     margin-bottom: 1em;
  }

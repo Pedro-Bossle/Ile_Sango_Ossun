@@ -1,0 +1,379 @@
+.adm__catalogo__main__title {
+    margin-top: 0.5em;
+}
+
+.adm__catalogo__filter__container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0 8em;
+}
+
+.adm__catalogo__filter {
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--preto-puro);
+    padding: 1em;
+}
+
+.add__new {
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--preto-puro);
+    border: 1px solid var(--preto-puro);
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.adm__catalogo__filter:hover {
+    background-color: #f0f0f0;
+}
+
+
+.adm__catalogo__container {
+    margin: 2em 6vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.adm__catalogo__container a {
+    text-decoration: none;
+    color: var(--preto-puro);
+}
+
+.adm__catalogo__card {
+    border: 1px solid var(--preto-puro);
+    width: 15vw;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 2em 0;
+    flex-wrap: wrap;
+}
+
+
+.adm__catalogo__card:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+
+.adm__catalogo__card__ico {
+    height: 100px;
+    width: 100px;
+}
+
+.adm__catalogo__card__subtitle {
+    margin-top: 0.7em;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.adm__catalogo__card__title {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Subtelas de edição de item */
+
+.adm__catalogo__edit__screen {
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.10);
+    border-radius: 18px;
+    padding: 2.5em 3em;
+    width: 60vw;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: linear-gradient(135deg, #f8fafc 0%, #f3f4f6 100%);
+    transition: box-shadow 0.3s;
+}
+
+.adm__catalogo__edit__screen__2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.catalogo__edit__screen__title {
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--amarelo-dourado, #c9a634);
+    letter-spacing: 1px;
+}
+
+.adm__catalogo__edit__screen input,
+.adm__catalogo__edit__screen textarea,
+.adm__catalogo__edit__screen select {
+    width: 100%;
+    padding: 0.8em 1em;
+    margin-bottom: 1em;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: var(--branco-puro, #fff);
+    font-size: 1em;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.adm__catalogo__edit__screen input:focus,
+.adm__catalogo__edit__screen textarea:focus,
+.adm__catalogo__edit__screen select:focus {
+    border-color: var(--amarelo-dourado, #c9a634);
+    outline: none;
+}
+
+.adm__catalogo__edit__screen label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.4em;
+    display: block;
+}
+
+.adm__catalogo__edit__screen button {
+    color: var(--branco-puro, #fff);
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--preto-puro, #222);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.icone__servico__file{
+    margin: 1em;
+}
+
+.adm__catalogo__edit__screen button:hover {
+    transform: translateY(-2px) scale(1.04);
+}
+
+.button__delete:hover {
+    background-color: #e74c3c;
+}
+
+.button__save:hover {
+    background-color: #27ae60;
+}
+
+.button__back:hover {
+    background-color: #b08d2e;
+}
+
+.adm__catalogo__edit__screen__2>div {
+    background: var(--branco-puro, #fff);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    padding: 1.5em;
+    transition: box-shadow 0.2s;
+}
+
+.adm__catalogo__edit__screen__2>div:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.adm__catalogo__edit__screen__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-button-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0.5em 0;
+}
+
+.catalogos__edit__title {
+    margin-bottom: 6px;
+}
+
+.catalogo__edit__screen__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    text-align: center;
+}
+
+.catalogos__edit__img {
+    margin-top: 2em;
+    width: 30%;
+}
+
+/* Checkbox (toggle) */
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: .5em;
+    padding: .125em;
+    font-size: 1em;
+}
+
+.toggle-checkbox {
+    appearance: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: .375em;
+    width: 3em;
+    height: 1.5em;
+    background-color: #e8e8e8;
+    box-shadow: inset 0 0 .0625em .125em rgb(255 255 255 / .2), inset 0 .0625em .125em rgb(0 0 0 / .4);
+    transition: background-color .4s linear;
+}
+
+.toggle-checkbox:checked+.toggle-container {
+    background-color: var(--amarelo-dourado, #c9a634);
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: .0625em;
+    border-radius: .3125em;
+    width: 1.375em;
+    height: 1.375em;
+    background-color: #e8e8e8;
+    box-shadow: inset 0 -.0625em .0625em .125em rgb(0 0 0 / .1), inset 0 -.125em .0625em rgb(0 0 0 / .2), inset 0 .1875em .0625em rgb(255 255 255 / .3), 0 .125em .125em rgb(0 0 0 / .5);
+    transition: left .4s;
+}
+
+.toggle-checkbox:checked+.toggle-container>.toggle-button {
+    left: 1.5625em;
+}
+
+.toggle-button-circles-container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: .125em;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.toggle-button-circle {
+    border-radius: 50%;
+    width: .125em;
+    height: .125em;
+    background-image: radial-gradient(circle at 50% 0, #f5f5f5, #c4c4c4);
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+    .adm__catalogo__main__title {
+        font-size: 1.2em;
+        margin-top: 0.5em;
+        text-align: center;
+    }
+    .adm__catalogo__filter__container {
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 0 1em;
+        padding: 0;
+    }
+    .adm__catalogo__filter {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.7em;
+    }
+    .adm__catalogo__container {
+        margin: 1em 0.5em;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0.5em;
+    }
+    .adm__catalogo__card {
+        width: 90vw;
+        margin: 0.5em auto;
+        padding: 1em 0;
+    }
+    .adm__catalogo__edit__screen {
+        width: 98vw;
+        padding: 1em;
+        min-width: unset;
+        max-width: unset;
+    }
+    .adm__catalogo__edit__screen__2 {
+        gap: 1em;
+    }
+    .catalogos__edit__img {
+        width: 90vw;
+        margin-top: 1em;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .adm__catalogo__main__title {
+        font-size: 1.4em;
+        margin-top: 0.5em;
+        text-align: center;
+    }
+    .adm__catalogo__filter__container {
+        flex-direction: column;
+        gap: 1em;
+        margin: 0 2em;
+        padding: 0;
+    }
+    .adm__catalogo__filter {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 1em;
+    }
+    .adm__catalogo__container {
+        margin: 1em 1em;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    .adm__catalogo__card {
+        width: 40vw;
+        margin: 1em auto;
+        padding: 1.5em 0;
+    }
+    .adm__catalogo__edit__screen {
+        width: 95vw;
+        padding: 1.5em;
+        min-width: unset;
+        max-width: unset;
+    }
+    .adm__catalogo__edit__screen__2 {
+        gap: 1.5em;
+    }
+    .catalogos__edit__img {
+        width: 60vw;
+        margin-top: 1.5em;
+    }
+}

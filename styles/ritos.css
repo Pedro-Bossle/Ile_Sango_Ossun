@@ -13,6 +13,35 @@
     margin-left: 3em;
 }
 
-.ritos__botao{
+.ritos__botao {
     margin-bottom: 3em;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .ritos__container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .ritos__foto {
+        height: 25vh;
+        max-height: 200px;
+        width: 28vw;
+        max-width: 150px;
+        margin-left: 0;
+        padding: 1em 0;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .ritos__foto {
+        height: 30vh;
+        max-height: 300px;
+        width: 20vw;
+        max-width: 150px;
+    }
+
 }

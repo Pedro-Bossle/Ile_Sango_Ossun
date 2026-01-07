@@ -1,0 +1,31 @@
+{
+    "eventos": [
+        {
+            "titulo": "Sessão de Kimbanda Malei",
+            "data": "01/01/2025",
+            "horario": "20:30",
+            "publico": 1,
+            "endereco": "R. Visc. de Pelotas Pio X, Caxias do Sul - RS, 95020-500",
+            "tipo": 1,
+            "id": 1
+        },
+        {
+            "titulo": "Sessão de Umbanda",
+            "data": "01/01/2025",
+            "horario": "20:30",
+            "publico": 1,
+            "endereco": "R. Visc. de Pelotas Pio X, Caxias do Sul - RS, 95020-500",
+            "tipo": 2,
+            "id": 2
+        },
+        {
+            "titulo": "Obrigação de Orixá",
+            "data": "01/01/2025",
+            "horario": "20:30",
+            "publico": 0,
+            "endereco": "R. Visc. de Pelotas Pio X, Caxias do Sul - RS, 95020-500",
+            "tipo": 3,
+            "id": 3
+        }
+    ]
+}

@@ -1,0 +1,283 @@
+.adm__eventos__main__title {
+    margin-top: 0.5em;
+}
+
+.adm__eventos__container {
+    margin: 2em 8em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.adm__eventos__container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.adm__eventos__filter__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 0 8em;
+    text-align: center;
+}
+
+.adm__eventos__filter {
+    width: 50%;
+    border-radius: 8px;
+    border: 1px solid var(--preto-puro);
+    padding: 1em;
+    transition: background 0.2s;
+}
+
+.adm__eventos__filter:hover {
+    background-color: #f0f0f0;
+}
+
+.add__new {
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--preto-puro);
+    border: 1px solid var(--preto-puro);
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.adm__eventos__card {
+    border: 1px solid var(--preto-puro);
+    width: 15vw;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 2em 0;
+    flex-wrap: wrap;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.adm__eventos__card:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.adm__eventos__card__ico {
+    height: 100px;
+    width: 100px;
+}
+
+.adm__eventos__card__subtitle {
+    margin-top: 0.7em;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.adm__eventos__card__title {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* Subtelas de edição de item */
+
+.adm__eventos__edit__screen {
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.10);
+    border-radius: 18px;
+    padding: 2.5em 3em;
+    width: 60vw;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background: linear-gradient(135deg, #f8fafc 0%, #f3f4f6 100%);
+    transition: box-shadow 0.3s;
+}
+
+.adm__eventos__edit__screen__2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.eventos__edit__screen__title {
+    font-size: 1.6em;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--amarelo-dourado, #c9a634);
+    letter-spacing: 1px;
+}
+
+.adm__eventos__edit__screen input,
+.adm__eventos__edit__screen textarea,
+.adm__eventos__edit__screen select {
+    width: 100%;
+    padding: 0.8em 1em;
+    margin-bottom: 1em;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: var(--branco-puro, #fff);
+    font-size: 1em;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.adm__eventos__edit__screen input:focus,
+.adm__eventos__edit__screen textarea:focus,
+.adm__eventos__edit__screen select:focus {
+    border-color: var(--amarelo-dourado, #c9a634);
+    outline: none;
+}
+
+.adm__eventos__edit__screen label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.4em;
+    display: block;
+}
+
+.adm__eventos__edit__screen button {
+    color: var(--branco-puro, #fff);
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1em;
+    background-color: var(--preto-puro, #222);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.adm__eventos__edit__screen button:hover {
+    transform: translateY(-2px) scale(1.04);
+}
+
+.button__delete:hover {
+    background-color: #e74c3c;
+}
+
+.button__save:hover {
+    background-color: #27ae60;
+}
+
+.button__back:hover {
+    background-color: #b08d2e;
+}
+
+.adm__eventos__edit__screen__2>div {
+    background: var(--branco-puro, #fff);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    padding: 1.5em;
+    transition: box-shadow 0.2s;
+}
+
+.adm__eventos__edit__screen__2>div:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.adm__eventos__edit__screen__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-button-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0.5em 0;
+}
+
+.evento__edit__title {
+    margin-bottom: 6px;
+}
+
+.eventos__edit__screen__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.evento__edit__img {
+    margin-top: 2em;
+    width: 30%;
+}
+
+/* Checkbox (toggle) */
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: .5em;
+    padding: .125em;
+    font-size: 1em;
+}
+
+.toggle-checkbox {
+    appearance: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: .375em;
+    width: 3em;
+    height: 1.5em;
+    background-color: #e8e8e8;
+    box-shadow: inset 0 0 .0625em .125em rgb(255 255 255 / .2), inset 0 .0625em .125em rgb(0 0 0 / .4);
+    transition: background-color .4s linear;
+}
+
+.toggle-checkbox:checked+.toggle-container {
+    background-color: var(--amarelo-dourado, #c9a634);
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: .0625em;
+    border-radius: .3125em;
+    width: 1.375em;
+    height: 1.375em;
+    background-color: #e8e8e8;
+    box-shadow: inset 0 -.0625em .0625em .125em rgb(0 0 0 / .1), inset 0 -.125em .0625em rgb(0 0 0 / .2), inset 0 .1875em .0625em rgb(255 255 255 / .3), 0 .125em .125em rgb(0 0 0 / .5);
+    transition: left .4s;
+}
+
+.toggle-checkbox:checked+.toggle-container>.toggle-button {
+    left: 1.5625em;
+}
+
+.toggle-button-circles-container {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: .125em;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.toggle-button-circle {
+    border-radius: 50%;
+    width: .125em;
+    height: .125em;
+    background-image: radial-gradient(circle at 50% 0, #f5f5f5, #c4c4c4);
+}
+

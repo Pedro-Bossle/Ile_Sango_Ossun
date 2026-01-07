@@ -4,11 +4,12 @@ window.addEventListener("DOMContentLoaded", function () {
         const header = document.querySelector("header");
 
         // Lista de links do menu admin
+        const isInPages = window.location.pathname.includes('/pages/');
         const adminLinks = [
-            { text: "Mensalidades", href: "#" },
-            { text: "Membros", href: "#" },
-            { text: "Editar Eventos", href: "#" },
-            { text: "Editar Catálogo", href: "#" }
+            { text: "Mensalidades", href: isInPages ? "mensalidades.html" : "./pages/mensalidades.html" },
+            { text: "Membros", href: isInPages ? "membros.html" : "./pages/membros.html" },
+            { text: "Editar Eventos", href: isInPages ? "eventosADM.html" : "./pages/eventosADM.html" },
+            { text: "Editar Catálogo", href: isInPages ? "catalogoADM.html" : "./pages/catalogoADM.html" }
         ];
 
         //  Criar menu admin desktop
@@ -38,19 +39,21 @@ window.addEventListener("DOMContentLoaded", function () {
             mobileMenu.appendChild(li);
         });
 
-        //Alterar botão de login (desktop apenas)
+        //Alterar botão de login (desktop)
         const botaoLogin = document.getElementById("botaoLogin");
 
-        const loginText = botaoLogin.querySelector("p.mobile__hide");
-        if (loginText) {
-            loginText.textContent = "Logout";
-        }
+        if (botaoLogin) {
+            const loginText = botaoLogin.querySelector("p.mobile__hide");
+            if (loginText) {
+                loginText.textContent = "Logout";
+            }
 
-        //mobile botao
-        botaoLogin.href = "#";
-        botaoLogin.addEventListener("click", () => {
-            localStorage.removeItem("loggedIn");
-            location.reload();
-        });
+            //mobile botao
+            botaoLogin.href = "#";
+            botaoLogin.addEventListener("click", () => {
+                localStorage.removeItem("loggedIn");
+                location.reload();
+            });
+        }
     }
-});
+})
